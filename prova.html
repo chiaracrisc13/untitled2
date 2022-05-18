@@ -1,0 +1,57 @@
+<link rel="stylesheet" type="text/css" href="css.css">
+
+
+
+
+<p>Enter a number into the text box.</p>
+<input type="text" id="number" placeholder="Enter a number..."><!-- use placeholder -->
+<button onclick="toggleContent()" id="button1">Submit</button>
+<script>
+    function showhide() {
+        document.getElementById('Foto1').style.visibility="hidden";
+        document.getElementById('Foto2').style.visibility="hidden";
+    }
+
+    function start() {
+        let button1 = document.getElementById("button1");
+        button1.onclick = toggleContent;
+        showhide();
+
+
+
+
+    }
+
+    function toggleContent() {
+        let number= +document.getElementById('number').value;
+        let liquid1 = document.getElementById('Foto1');
+        let liquid2 = document.getElementById('Foto2');
+
+
+
+
+        if (number = 1000) { // condition without parseint
+            document.getElementById("Foto1").style.visibility = "visible";
+
+        }
+        if (number = 1100) { // condition without parseint
+            document.getElementById("Foto2").style.visibility = "visible";
+
+        }
+
+
+        else {  alert("Invalid Entry. Enter a Number.")
+            return;
+        }
+    }
+
+    window.onload = start;
+
+
+</script>
+
+<div id="main-header">
+    <img id="Foto1" src="assets/Piantina%20museo.jpg">
+    <img id="Foto2" src="assets/Piantina%20museo%20-%20Copia.jpg">
+
+</div>

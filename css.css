@@ -1,0 +1,13 @@
+
+#main-header img {
+    width: 69%;
+    height: auto;
+    display:block;
+    margin:0px auto;
+    text-align:center;
+}
+
+#main-header h1 {
+    color: #F8D115;padding-left: 1%;
+    font-family: Calibri;
+}
